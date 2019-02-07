@@ -1,0 +1,27 @@
+/*styles*/
+a.btn:active{
+    background:olive;
+}
+.team-account, .account {
+    padding: 20px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+a.logout {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    color: crimson;
+    padding-right: 30px;
+
+
+    
+}
+.log{
+	text-align: right;
+}

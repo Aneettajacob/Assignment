@@ -1,0 +1,55 @@
+
+<div class="col-md-12">
+  <div class="log">
+    <a ui-sref="login" class="logout">Logout</a>
+  </div>
+  <h4>Welcome {{user}}! </h4>
+</div>
+
+<div class="container">
+ <div ng-controller="employeeCtrl"> 
+   <a href="" ng-click="show = 1" class="btn btn-success" >My Account</a>
+   <a href="" ng-click="show = 2" class="btn btn-success">Team Account</a>  
+   <div class="account">
+     <table align="center" border="1" ng-hide="true" ng-show="show==1">    
+       <tr>    
+         <th>Employee ID</th>    
+         <th>Employee Name</th>    
+         <th>Job</th>    
+         <th>Salary</th>    
+         <th>Hire Date</th>    
+         <th>Dept No.</th>    
+       </tr>    
+       <tr ng-repeat="employee in employees">    
+         <td>{{employee.id}}</td>    
+         <td>{{employee.name}}</td>    
+         <td>{{employee.job}}</td>    
+         <td>{{employee.salary}}</td>    
+         <td>{{employee.date}}</td>    
+         <td>{{employee.no}}</td>    
+       </tr>    
+     </table>
+   </div> 
+   <div class="team-account">
+     <table align="center" border="1" ng-hide="true" ng-show="show==2">    
+       <tr>    
+         <th>ID</th>    
+         <th>Name</th>    
+         <th>Gender</th>    
+         <th>Salary</th>    
+         <th>Deptartment</th>    
+         <th>Dept No</th>    
+       </tr>    
+       <tr ng-repeat="employee in employees2">    
+         <td>{{employee.id}}</td>    
+         <td>{{employee.name}}</td>    
+         <td>{{employee.gender}}</td>    
+         <td>{{employee.salary}}</td>    
+         <td>{{employee.dept}}</td>    
+         <td>{{employee.deptno}}</td>    
+       </tr>    
+     </table>
+   </div>    
+ </div>
+</div>
+
